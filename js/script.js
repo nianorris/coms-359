@@ -1,3 +1,8 @@
+// Open and close the mobile nav menu
+function toggleMenu() {
+  document.getElementById("nav-links").classList.toggle("open");
+}
+
 // Handle the contact form submission
 function handleSubmit(event) {
   event.preventDefault(); // Stop the page from reloading
