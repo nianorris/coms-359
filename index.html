@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Development — COMS 359</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+  <header>
+    <nav>
+      <span class="logo">COMS 359</span>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#topics">Topics</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <h1>Welcome to <span class="highlight">Web Design and Development</span></h1>
+      <p>COMS 359 &mdash; learn to build and publish websites from scratch.</p>
+      <a href="#about" class="btn">About the Class</a>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About This Class</h2>
+      <p>
+        COMS 359 is an introductory web development course. You will learn how HTML, CSS,
+        and JavaScript work together to create websites that anyone in the world can visit.
+      </p>
+      <p>
+        By the end of the course you will have built and published your own site — just like this one.
+      </p>
+    </section>
+
+    <section id="topics" class="section alt">
+      <h2>What We Cover</h2>
+      <div class="cards">
+        <div class="card">
+          <div class="card-icon">🏗️</div>
+          <h3>HTML</h3>
+          <p>Structure your content with headings, paragraphs, links, images, and more.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🎨</div>
+          <h3>CSS</h3>
+          <p>Style and layout your pages using colors, fonts, flexbox, and grid.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">⚡</div>
+          <h3>JavaScript</h3>
+          <p>Add interactivity — respond to clicks, update the page, and handle forms.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🚀</div>
+          <h3>GitHub Pages</h3>
+          <p>Deploy your site live on the web for free using Git and GitHub Pages.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Questions?</h2>
+      <p>This is a demo contact form — it won't actually send anything, but try it out!</p>
+      <form class="contact-form" onsubmit="handleSubmit(event)">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" placeholder="Your name" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="4" placeholder="Type something..." required></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+      <p id="form-feedback" class="feedback hidden"></p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Built with HTML, CSS &amp; JavaScript &middot; Hosted on <a href="https://pages.github.com" target="_blank">GitHub Pages</a></p>
+  </footer>
+
+  <script src="/js/script.js"></script>
+</body>
+</html>
